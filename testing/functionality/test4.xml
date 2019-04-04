@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transactions account="2">
+  <order sym="A" amount="-8" limit="50"/>
+  <order sym="B" amount="10" limit="100"/>
+  <order sym="C" amount="-10" limit="20"/>  <!--execute-->
+  <query id="6"/>
+</transactions>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transactions account="2">
+  <query id="7"/>
+  <query id="6"/>
+  <query id="1"/> <!--error-->
+  <query id="2"/> <!--error-->
+  <cancel id="6"/>
+  <cancel id="7"/>
+</transactions>

@@ -1,0 +1,18 @@
+To run the scalability test, do the following:
+
+1. Go into test1 folder
+2. Adjust MAX_THREAD variable in test.cpp as well as the NUM_REQUEST to send out sepecific number of requests.
+3. There are roughly 10 requests in total for test2.xml and test3.xml, so the total request is roughly equal to NUM_REQUEST * MAX_THREAD * 10.
+4. Run: time ./test.sh
+5. After the all responses have been received, look at the real time displayed.
+
+
+The results should roughly follow the pattern, and the server is able to process these requests with no interference or seg fault:
+
+Time	   # of Request
+-------------------------
+0.041s	   10 requests
+0.3s       100 requests
+1.92s      1000 requests
+13.18s     10000 requests
+120.0s     100000 requests

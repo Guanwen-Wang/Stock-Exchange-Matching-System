@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transactions account="1">
+  <order sym="A" amount="-5000" limit="100"/>   <!--error: insufficient amount-->
+  <order sym="A" amount="-500" limit="100"/>
+  <order sym="B" amount="500" limit="100"/>  <!--error: insufficient balance-->
+  <order sym="B" amount="5" limit="100"/>   <!--if execute, then create position-->
+  <order sym="C" amount="10" limit="50"/>  <!--if execute, then update position-->
+  <order sym="B" amount="-200000" limit="20000"/> <!--error-->
+  <order sym="D" amount="20" limit="2000"/> <!--error-->
+</transactions>

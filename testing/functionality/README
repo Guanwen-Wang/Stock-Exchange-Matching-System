@@ -1,0 +1,13 @@
+These test cases are for functionality testing which makes sure that the matching machine support connections and would execute commands properly on a sequential basis.
+
+File named with "testX.xml" are outgoing messages to be sent to the server. The "expected_result.xml" contains the expected result for each test file.
+
+To run the test, first do make to compile the testing program. Then either:
+
+./test testX.xml
+
+or
+
+./script.sh, which automatically run all test files.
+
+Please expect the response to be printed to the terminal when you test. The test program first construct the request, and wait for the reponse once the request is sent, finally print the response on the console.

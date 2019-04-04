@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transactions account="3">
+  <order sym="A" amount="100" limit="100"/>  <!--fully  execute-->
+  <order sym="B" amount="-30" limit="50"/>   <!--partially  execute-->
+  <order sym="C" amount="40" limit="50"/>  <!--order_id=7-->
+</transactions>
